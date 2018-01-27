@@ -38,11 +38,13 @@ class Tape:
 
     def getVal(self):
         return self.tape[self.pointer];
+        
 
     def setVal(self, val):
+        assert(type(val) is int)
         self.tape[self.pointer] = val
         return None;
 
-
+    
 
 
